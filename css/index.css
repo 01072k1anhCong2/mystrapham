@@ -11,16 +11,28 @@
         }
 
         /* Header */
-        header {
-            background: #000;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            border-bottom: 1px solid #333;
-        }
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* đen 50% trong suốt */
+    padding: 1rem 2rem;
+    position: fixed; /* hoặc sticky */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* bóng mềm */
+    backdrop-filter: blur(10px); /* làm mờ nền phía sau */
+}
+
+/* Logo và link vẫn trắng */
+header .logo,
+header .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hover link */
+header .nav-links li a:hover {
+    color: #ff4081;
+}
 
         nav {
             max-width: 1200px;
