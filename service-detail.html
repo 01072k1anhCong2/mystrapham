@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết dịch vụ - ＣＡＲＴ ＭＡＫＥＵＰ</title>
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/service-detail.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">💄 ＣＡＲＴ ＭＡＫＥＵＰ</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home" onclick="closeMenu()">Trang chủ</a></li>
+                <li><a href="index.html#about" onclick="closeMenu()">Giới thiệu</a></li>
+                <li><a href="index.html#services" onclick="closeMenu()">Dịch vụ</a></li>
+                <li><a href="index.html#gallery" onclick="closeMenu()">Bộ sưu tập</a></li>
+                <li><a href="index.html#contact" onclick="closeMenu()">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="service-detail">
+  <h1 id="service-title">Dịch vụ</h1>
+  <img id="service-img" src="" alt="Hình dịch vụ" style="width:100%; max-width:600px; border-radius:8px; margin-bottom:1rem;">
+  <h2>Mô tả chi tiết</h2>
+  <p id="service-desc"></p>
+
+  <h2>Quy trình thực hiện</h2>
+  <ul id="service-process"></ul>
+
+  <h2>Lợi ích khi sử dụng dịch vụ</h2>
+  <ul id="service-benefits"></ul>
+
+  <h2>Lưu ý</h2>
+  <ul id="service-notes"></ul>
+
+  <div id="service-price" class="price" style="margin-top:1rem; font-weight:bold;"></div>
+</main>
+<a href="https://www.facebook.com/n.thobeo1610" class="messenger-btn" target="_blank">
+    <img src="./images/messenger.png" alt="Messenger Icon">
+</a>
+<script src="./js/service-detail.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

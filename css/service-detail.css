@@ -1,0 +1,123 @@
+/* ===== Body & font ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* nền đen tối */
+    color: #ffffff; /* chữ trắng */
+}
+
+/* ===== Header / Navbar ===== */
+header {
+    background-color: #1f1f1f; /* đen nhạt */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header .nav-links li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-decoration: none !important;
+    color: inherit; /* giữ màu chữ từ parent */
+
+
+    
+}
+
+header .nav-links li a:hover {
+    color: #ff4081; /* hồng sang trọng */
+}
+
+/* ===== Main content ===== */
+main.service-detail {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ffffff20;
+    padding-bottom: 0.5rem;
+}
+
+main h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff4081;
+}
+
+main p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+main img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* ===== Lists ===== */
+main ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Price ===== */
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1f1f1f;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 1.6rem;
+    }
+    main h2 {
+        font-size: 1.1rem;
+    }
+    header .nav-links {
+        gap: 1rem;
+    }
+}
